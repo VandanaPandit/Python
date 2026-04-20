@@ -1,0 +1,7 @@
+print('hello! World')
+#print('What is you name')
+my_name = input('What is you name')
+print('Your name is ' + my_name)
+# print('what is your age')
+my_age = input('what is your age')
+print('you will be ' + str(int(my_age) + 1) + " in a year")

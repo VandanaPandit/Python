@@ -5,9 +5,7 @@ from datetime import datetime
 def check_service(url, name):
     try:
         response = requests.get(url, timeout=5)
-        print(response)
         status = "UP" if response.status_code == 200 else f"Down{response.status_code}"
-        print(status)
         response_time = response.elapsed.total_seconds()
         return{
             'name': name,
